@@ -1,0 +1,104 @@
+* {
+    /* reset do css */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* 1rem =16px */
+/* 40px = 2,5rem */
+
+:root{
+    --gray-800:#1E293B;
+    --gray-600:#475569;
+    --gray-400:#94a3b8;
+    --gray-200:#e2e8f0;
+    --purple:#7c3aed;
+}
+/* numero = 20 */
+/* print(numero) */
+/* root e como python */
+header {
+    background-image: url(./imagens/bg-mobile.png);
+    background-size: cover;
+    height: 8.375rem;
+    /* sempre que posição você trabalha com display:flex; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.7rem;
+
+}
+
+main{
+    padding-inline: 1.5rem;
+    
+}
+.descricao{
+    margin-bottom: 2.5rem;
+} 
+
+
+.descricao h1{
+    color: var(--gray-800);
+    margin-bottom: 1rem;
+    font-size: 1.5625rem;
+}
+/* nome da cor,rgb,rgba,hex,hsl,h2b */
+/* var seleciona variavel */
+.descricao p{
+    font-size: 0.8125rem;
+    color: var(--gray-600);    
+}
+
+
+.input-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+} 
+ 
+
+.login label{
+    font-size: 0.875rem ;
+    color: var(--gray-800);
+    font-weight: 600;
+}
+
+.login input{
+    padding: 1rem 0.75rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.25rem;
+    color: var(--gray-800);
+}
+
+.login input::placeholder{
+    color: var(--gray-400);
+}
+
+.login input:hover,
+.login input:focus{
+    outline: 1px solid var(--purple);
+}
+
+
+.input-box div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.login a{
+    color: var(--purple);
+    text-decoration: none;
+    font-size: 0.865rem;
+    font-weight: 600;
+
+}
+
+.login a:hover{
+    text-decoration: underline;
+}
